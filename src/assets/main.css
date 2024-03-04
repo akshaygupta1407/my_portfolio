@@ -1,0 +1,14 @@
+body{
+  /* background-color: rgb(20, 48, 96); */
+  /* background-color: #383c49; */
+  /* background: linear-gradient(45deg, #04152d,#4b6cb7, #04152d,#4b6cb7, #04152d,#4b6cb7, #04152d); */
+  background: linear-gradient(
+  45deg,
+  #04152d 0%,
+  #2c3e70 25%,
+  #4b6cb7 50%,
+  #2c3e70 75%,
+  #04152d 100%
+);
+
+}
