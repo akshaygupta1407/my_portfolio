@@ -102,20 +102,40 @@ body {
 .description {
   margin-top: -10px;
 }
-img {
-  height: 50px;
-  width: 50px;
-  margin-left: 20px;
+@media only screen and (min-width: 768px) {
+  img {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+  }
+  .logo {
+    width: 20%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content {
+    width: 87%;
+    float: right;
+  }
 }
-.logo {
-  width: 20%;
-  float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.content {
-  width: 87%;
-  float: right;
+@media only screen and (max-width: 768px) {
+  img {
+    height: 40px;
+    width: 40px;
+    margin-left: 12px;
+  }
+  .logo {
+    width: 15%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content {
+    width: 75%;
+    float: right;
+  }
 }
 </style>

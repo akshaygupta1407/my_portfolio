@@ -1,11 +1,9 @@
 <template>
-  <div class="">
-    <Navbar />
-    <MainSection />
-    <AboutSection />
-    <Experience />
-    <Footer></Footer>
-  </div>
+  <Navbar />
+  <MainSection />
+  <AboutSection />
+  <Experience />
+  <Footer></Footer>
 </template>
 
 <script setup>

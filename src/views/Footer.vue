@@ -33,7 +33,7 @@
                   src="https://cdn.simpleicons.org/linkedin/#0A66C2"
                 />
               </div>
-              <div class="link">linkedin.com/in/akshay-gupta-bb87b8215</div>
+              <div class="link">in/akshay-gupta-bb87b8215</div>
             </div></a
           >
 
@@ -56,44 +56,95 @@
 </template>
 
 <style scoped>
-.footer_body {
-  background-color: #19376d;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  margin-top: 20px;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-bottom: -10px;
+@media only screen and (min-width: 768px) {
+  .footer_body {
+    background-color: #19376d;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 10px 20px;
+  }
+  .links {
+    display: flex;
+  }
+  h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container {
+    color: #ffffff;
+    margin: 0px 250px;
+  }
+  .left {
+    width: 45%;
+  }
+  .right {
+    width: 45%;
+    padding-top: 20px;
+  }
+  img {
+    margin-right: 10px;
+  }
 }
-a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 18px;
-  margin: 0px 20px;
-}
-.links {
-  display: flex;
-}
-h1 {
-  font-size: 60px;
-  margin-bottom: 10px;
-}
-.footer_container {
-  display: flex;
-  justify-content: space-between;
-}
-.container {
-  color: #ffffff;
-  margin: 0px 250px;
-}
-.left {
-  width: 45%;
-}
-.right {
-  width: 45%;
-  padding-top: 20px;
-}
-img {
-  margin-right: 10px;
+@media only screen and (max-width: 768px) {
+  .footer_body {
+    background-color: #19376d;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 10px 20px;
+  }
+  .links {
+    display: flex;
+  }
+  h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .container {
+    color: #ffffff;
+    margin: auto;
+    width: 100vw;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    margin-right: 10px;
+  }
 }
 </style>

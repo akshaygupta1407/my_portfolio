@@ -42,36 +42,75 @@ import AboutContent from "../components/AboutContent.vue";
 </script>
 
 <style scoped>
-.container {
-  background-color: #091019;
-  margin: 0px 200px;
-  border-radius: 40px;
-}
 h2 {
   color: white;
 }
-.title {
-  margin: 0px 50px;
-  padding-top: 30px;
-}
-.about {
-  display: flex;
+@media only screen and (min-width: 768px) {
+  .container {
+    background-color: #091019;
+    margin: 0px 200px;
+    border-radius: 40px;
+  }
+
+  .title {
+    margin: 0px 50px;
+    padding-top: 30px;
+  }
+  .about {
+    display: flex;
+  }
+
+  .right {
+    color: white;
+    margin-left: 100px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left img {
+    height: 400px;
+    width: 400px;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 2s infinite alternate;
+  }
 }
 
-.right {
-  color: white;
-  margin-left: 100px;
-  margin-top: 5px;
-  display: flex;
-  flex-direction: row;
+@media only screen and (max-width: 768px) {
+  .container {
+    background-color: #091019;
+    margin: 0px -10px;
+    margin-bottom: 5px;
+  }
+  .title {
+    margin: 0px 15px;
+    padding-top: 30px;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .left img {
+    height: 300px;
+    width: 300px;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 2s infinite alternate;
+  }
+  .right {
+    color: white;
+    margin-top: 5px;
+    margin: 0px 10px;
+    margin-bottom: 5px;
+  }
+  .about {
+    padding-bottom: 10px;
+  }
 }
 
-.left img {
-  height: 400px;
-  width: 400px;
-  -webkit-animation: mover 2s infinite alternate;
-  animation: mover 2s infinite alternate;
-}
 @-webkit-keyframes mover {
   0% {
     transform: translateY(0);

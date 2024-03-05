@@ -20,23 +20,31 @@ import ExperienceBox from "../components/ExperienceBox.vue";
 </script>
 
 <style scoped>
-.container {
-  margin: 0px 250px;
-}
 h2 {
   color: white;
 }
-.title {
-  padding-top: 30px;
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 0px 250px;
+  }
+
+  .title {
+    padding-top: 30px;
+  }
+  .skill_exp_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills {
+    width: 35%;
+  }
+  .exp {
+    width: 50%;
+  }
 }
-.skill_exp_container {
-  display: flex;
-  justify-content: space-between;
-}
-.skills {
-  width: 35%;
-}
-.exp {
-  width: 50%;
-}
+/* @media only screen and (max-width: 768px) {
+  .container {
+    margin: 0px -10px;
+  }
+} */
 </style>
